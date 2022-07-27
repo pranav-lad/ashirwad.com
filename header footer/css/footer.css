@@ -1,0 +1,244 @@
+/* 
+.c-footer {
+    background: black;
+    color: rgb(233, 230, 230);
+    display: flex;
+}
+
+.ashi-info {
+    width: 35%;
+    padding: 30px 35px 15px 50px;
+}
+
+.ashi-info h4 {
+    font-size: 28px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ashi-info .para p {
+    font-size: 17px;
+}
+
+.c-box {
+    width: 40%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+}
+
+.c-box-inner {
+    display: flex;
+    width: 100%;
+}
+
+.quick-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.quick-link {
+    width: 50%;
+}
+
+.qlink-form input {
+    padding: 10px;
+}
+
+.foot-btn {
+    padding: 10px;
+    background: #aa122c;
+    border: none;
+    height: 42px;
+}
+
+.foot-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.map {
+    padding: 22px;
+}
+
+.c-name {
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    margin-top: 13px;
+    letter-spacing: 5px;
+    color: #ff2045;
+} */
+
+
+body,html
+{
+margin: 0px;
+padding: 0px;
+color: #fff;
+width: 100%;
+box-sizing: border-box;
+}
+footer
+{
+z-index: 5;
+ bottom: 0px;
+}
+hr
+{
+    width: 50%;
+    margin-left: 0px;
+}
+.footer-items
+{
+    display: flex;
+    background-color: #111;
+    padding: 10px;
+    padding-top: 30px;
+}
+.footer-items .box
+{
+flex-basis: 50%;
+padding-left: 20px;
+}
+.one h1
+{
+margin-left: 5px;
+
+}
+.box h1
+{
+font-size: 22px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.box .content
+{
+margin: 22px 0px 11px 0px;
+
+}
+.box .content p
+{
+font-size: 14px;
+text-align: justify;
+}
+/*.box .content .readmore button
+{
+font-size: 14px;
+color: #fff;
+width: 100%;
+height: 35px;
+cursor: pointer;
+background-color: #222;
+border: 1px solid #111;
+border-radius: 15px;
+}
+.box .content .readmore button:hover
+{
+color: #fff;
+background-color: teal;
+transition: 0.5s;
+}*/
+.two .content .fas
+{
+background-color: #222;
+font-size: 20px;
+width: 45px;
+height: 45px;
+line-height: 45px;
+text-align: center;
+border-radius: 50%;
+transition: .4s;
+cursor: pointer;
+
+}
+.two .content .fas:hover
+{
+background: teal;
+transition: .4s;
+
+}
+.two .content .phone
+{
+margin: 10px 0px;
+}
+.four .text, .four .msg
+{
+font-size: 18px;
+margin-bottom: 2px;
+color: #777;
+}
+.four  form input
+{
+   height: 20px;
+}
+.four form input, .four form textarea
+{
+width: 95%;
+background-color: #151515;
+padding-left: 10px;
+font-size: 15px;
+color: #fff;
+border: 1px solid #222222;
+transition: .4s;
+}
+.four button
+{
+width:100%;
+font-size: 16px;
+color: #000;
+font-weight: 500;
+height: 37px;
+background-color: #999999;
+border-radius: 10px;
+margin-top: 5px;
+cursor: pointer;
+border: 1px solid #111;
+}
+.four button:hover
+{
+background-color: teal;
+transition: .5s;
+}
+.end p
+{
+width:100%;
+/* line-height: 50%; */
+text-align: center;
+color: white;
+margin: 0;
+background: black;
+padding: 10px;
+}
+.end .cb
+{
+  cursor: pointer;
+  font-size: 18px;
+}
+.two a
+{
+text-decoration: none;
+color: white;
+}
+
+@media screen and(max-width: 788px)
+{
+footer
+{
+position: relative;
+bottom: 0;
+}
+
+.footer-items
+{
+flex-wrap: wrap;
+flex-direction: column;
+}
+.footer .box
+{
+margin: 5px 0px;
+}
+}

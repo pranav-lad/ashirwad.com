@@ -1,0 +1,161 @@
+
+
+/* importing Font for logo */
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+/* importing Font for nav items */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.H-header-top {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #6b0408;
+    padding : 25px 0;
+    padding-top: 0;
+}
+
+.H-logo .H-logo-container {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+.H-logo .H-logo-container img {
+    width: 360px;
+    height: fit-content;
+}
+/* .H-logo .H-logo-container h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Arizonia', cursive;
+    font-size: 55px;
+    color: white;
+    margin : 0;
+} */
+
+.H-social-links {
+    display: flex;
+    width: minmax(10vw, 30vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.H-social-links a {
+    margin : 0 10px 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.H-social-links a:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.H-social-links a img {
+    width: 25px;
+}
+
+
+.top-btn img{
+    width: 25px;
+}
+.top-btn {
+    position: fixed;
+    right: 2%;
+    bottom: 3.2%;
+    background: #ff8589;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 8px 8px rgba(33, 33, 33, 0.666);
+}
+.whatsapp-btn {
+    position: absolute;
+    bottom: 13%;
+    right: 1.8%;
+    z-index: 3;
+    background: rgb(173, 16, 16);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 6px rgb(72, 62, 3);
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.25s ease-in-out;
+}
+.whatsapp-btn img{
+    width: 45px;
+}
+
+.title-gallery {
+    width: fit-content;
+    color: rgb(255, 233, 106);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background: rgb(151, 8, 8) center center no-repeat;
+
+    border-bottom: 4px solid rgb(255, 233, 106);
+    border-top: 4px solid rgb(255, 233, 106);
+}
+.title-gallery h2 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.active {
+    color: rgb(169 141 71) !important;
+}
+@media only screen and (max-width: 668px) {
+    .H-header-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    .H-logo .H-logo-container img {
+        width: 306px;
+        border-block: 1px solid goldenrod;
+        margin:10px;
+    }
+    .i-x23 {
+        padding-bottom: 12px;
+    }
+    .H-social-links{
+        display: none;
+    }
+     header .H-navbar {
+        display: none;
+    }
+    .H-header-top:nth-child(2){
+        order: -1;
+    }
+    .H-header-top:nth-child(1){
+        order: 2;
+    }
+    .H-header-top:nth-child(3){
+        order: 3;
+    }
+    .H-header-top {
+        padding-bottom: 0;
+    }
+    .H-navbar ul {
+        width: 100%;
+    }
+}

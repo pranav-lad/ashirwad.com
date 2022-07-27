@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y33X5YZFHF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y33X5YZFHF');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Icon -->
+    <link href="vender/img/logo/PCCOE_LOGO_b.jpg" rel="shortcut icon" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="vender/css/bootstrap.css" rel="stylesheet" />
+    <!-- PCCOE HEADER FOOTER CSS FILE -->
+    <link rel="stylesheet" href="imp-pccoe-style.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+    <link href="vender/css/navbar.css" rel="stylesheet" />
+    <link href="vender/css/style1.css" rel="stylesheet" />
+    <!-- Icon Link -->
+    <link href="vender/icon/css/brands.css" rel="stylesheet" />
+    <link href="vender/icon/css/fontawesome.css" rel="stylesheet" />
+    <link href="vender/icon/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/custom-scroll-bar.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <!-- <link rel="stylesheet" type="text/css" href="sarees.css"> -->
+    <title>Ashirwad</title>
+
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+   body
+   {
+    font-size: 100%;
+    background: #7e0509;
+   }
+   .headsari
+   {
+    font-size: 4.0rem;
+    font-weight: 200;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 43px;
+
+   }
+/*sarees gallery css*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
+.descps
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 300;
+    padding: 20px;
+}
+.slideshow {
+  width: 40%;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  line-height: 400px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+  
+}
+/* slideshow item */
+.slideshow--item {
+  width: auto;
+  height: 100%;
+  line-height: 1.5;
+  position: absolute;
+  top: -12px;/*earlier 0*/
+  overflow: hidden;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow--item img {
+  width: 50%;
+  height: auto;
+}
+.slideshow--bullet:checked + .slideshow--item {
+  visibility: visible;
+}
+.slideshow[data-transition="fade"] .slideshow--item {
+  visibility: visible;
+  opacity: 0;
+  transition: .3s ease-out opacity;
+}
+.slideshow[data-transition="fade"] .slideshow--bullet:checked + .slideshow--item {
+  opacity: 1;
+}
+/* slideshow navigation */
+.slideshow--nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  display: none;
+  z-index: 88;
+  cursor: pointer;
+  color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.slideshow--nav:after {
+  display: block;
+  content: '\25B6';
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  right: -35px;
+  padding-right:40px;
+  padding-top: 25px;
+  padding-left: 10px;
+  border-radius: 50%;
+  margin-top: -1.5em;
+  transition: all 0.5s ease;
+}
+.slideshow--nav-previous {
+  left: -45px;
+  display: block;
+}
+.slideshow--nav-previous:after {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  transform: scaleX(-1);
+  right: auto;
+  left: 10px;
+}
+.slideshow--nav-next {
+  left: 50%;
+  display: block;
+}
+/* Radiobuttons to control the slideshow */
+.slideshow--bullet {
+  font-size: .75em;/*0.75*/
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+  margin: 8px 8px -120px;
+  z-index: 99;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #8d8d8d;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  top: -20px;/*earlier not included*/
+}
+.slideshow--bullet:checked {
+  background: #333;
+  outline: none;
+}
+.button-container {
+  padding: 20px;
+}
+.folio-button {
+  margin: 0 auto;
+  padding: 5px 10px;
+  background-color: #91B0A5;
+  border-radius: 4px;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+}
+.folio-button:hover {
+  background-color: #B0D6C9;
+}
+@media only screen and (max-width: 980px) {
+  .slideshow {
+    width: 100%;
+    height: 200px;
+}
+  .slideshow--bullet {
+    margin: 8px 8px -110px;
+}
+  .button-container {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 402px) {
+  .slideshow {
+    width: 100%;
+    height: 150px;
+}
+  .slideshow--bullet {
+    margin: 8px 8px -100px;
+}
+    .button-container {
+    margin-top: 120px;
+  }
+}  
+
+    </style>
+</head>
+
+<body class="" id ="">
+
+
+    <!-- Start Header -->
+    <header>
+            <div class="H-header-top">
+              <div class="H-social-links">
+                <a class="H-facebook" href="#">
+                  <img src = "img/png/facebook.png">
+                </a>
+                <a class="H-whatsapp" href="#">
+                  <img src = "img/png/whatsapp.png">
+                </a>
+                <a class="H-telegram" href="#">
+                  <img src = "img/png/telegram.png">
+                </a>
+              </div>
+              <div class="H-logo">
+                <div class="H-logo-container"><a href="index.html"><img src="img/logo/logo.png"></a></div>
+              </div>
+              <div class="H-social-links i-x23">
+                <a class="H-mail" href="#">
+                  <img src = "img/png/gmail.png">
+                </a>
+                <a class="H-call" href="#">
+                  <img src = "img/png/phone.png">
+                </a>
+              </div>
+            </div>
+       
+    </header>
+    <!-- End Header -->
+
+   <!-- Start Navbar -->
+   <div class="menu-section d-flex justify-content-around">
+    <nav id="menu" style="transition: all 0.3s ease-in-out;">
+        <label for="tm" id="toggle-menu"><b>&#9776;</b> <span class="drop-icon"><b></b></span></label>
+        <input type="checkbox" id="tm">
+        <ul class="main-menu cf" >
+          <li class="b-left active"><a style="color:rgb(255, 214, 112);" href="index.html">Home</a></li>
+          <li class="b-left"><a style="color:rgb(255, 214, 112)" href="about.html">About</a></li>
+          <li class="b-left"><a style="color:rgb(255, 214, 112)" href="saree.html">Sarees</a></li>
+          <li class="b-left"><a style="color:rgb(255, 214, 112)" href="sands.html">Shirting & Suitings</a></li>
+          <li class="b-left b-right"><a style="color:rgb(255, 214, 112)" href="contactus.html">Contact us</a></li>
+      </ul>
+    </nav>
+</div>
+<!-- End Navbar -->
+<section style="margin-top:100px; margin-bottom: 150px; color: rgb(255, 215, 115);">
+    <!-- sarees slider start -->
+
+    <h1 class="headsari">Beautiful Sarees</h1>
+    <div class="text" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; padding : 30px;">
+    <p class="descp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" interval="100" data-bs-ride="carousel" style="padding-top: 40px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+          <img src="img/slider/10.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+              <span class="title"></span>
+            </div>
+          </div>
+      <div class="carousel-item">
+          <img src="img/slider/11.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+            <span class="title"></span>
+          </div>
+        </div>
+      <div class="carousel-item">
+        <img src="img/slider/12.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+              <span class="title"></span>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="img/slider/13.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+              <span class="title"></span>
+          </div>
+        </div>
+      <div class="carousel-item">
+          <img src="img/slider/14.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+            <span class="title"></span>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="img/slider/15.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+              <span class="title"></span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/7.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+              <span class="title"></span>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="img/slider/8.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+              <span class="title"></span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider/9.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption pb-0">
+            <span class="title"></span>
+          </div>
+        </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+</section>
+<!-- Start footer -->
+
+<footer class="container-fluid">
+    <div class="row bg-blue d-flex justify-content-center px-5 pb-3 mt-md-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="text-white">
+                <div class="mt-5">
+                    
+                </div>
+                <!-- <div class="d-flex justify-content-evenly align-self-center">
+                    <a targrt="_blank" href="https://www.instagram.com/pccoepune/"
+                        class="text-decoration-none text-white">
+                        <span class="fs-4">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a targrt="_blank" href="https://www.linkedin.com/company/pccoe-pune/?trk=biz-companies-cym"
+                        class="text-decoration-none text-white">
+                        <span class="fs-4">
+                            <i class="fab fa-linkedin-in"></i>
+                        </span>
+                    </a>
+                    <a targrt="_blank" href="https://www.facebook.com/PCCOENigadi/"
+                        class="text-decoration-none text-white">
+                        <span class="fs-4">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                    </a>
+
+                    <a targrt="_blank"
+                        href="https://twitter.com/pccoe_pune?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        class="text-decoration-none text-white">
+                        <span class="fs-4">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a targrt="_blank" href="https://www.youtube.com/channel/UCQiPDETOiteTLmAvvPk1WjA"
+                        class="text-decoration-none text-white">
+                        <span class="fs-4">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+
+    </div>
+    <div class="row bg-blue d-flex justify-content-center px-5 pt-md-5 a-footer">
+        <div class="col-lg-4 col-md-12 mb-3 ps-md-5">
+            <div class="border-bottom border-2 border-white mb-3">
+                <h5>
+                    <p class="text-white">
+                         About &nbsp; <i class="fas fa-link"></i>
+                    </p>
+                </h5>
+            </div>
+            <div>
+                <div>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, delectus! Adipisci iure ad error ratione, officiis quasi, ut provident placeat quae harum tenetur? Atque, qui ullam vero facilis aspernatur quidem voluptates praesentium aliquid officiis quod, fugiat odio iure sed impedit!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-md-5">
+            <div class="border-bottom border-2 border-white mb-3">
+                <h5>
+                    <p class="text-white">
+                         Contact us &nbsp; <i class="fas fa-phone"></i>
+                    </p>
+                </h5>
+            </div>
+            <div class="text-white">
+                <h6>Tele : 020 – 2765 3168</h6>
+                <h6>Tele : 020 – 2765 3166</h6>
+                <h6>Ph : +91 9960984347</h6>
+                <h6>
+                    <a targrt="_blank" href="mailto:admin@pccoepune.org" class="text-decoration-none text-white">
+                        <i class="fas fa-envelope"></i>&nbsp; ashirwad@gmail.com</a>
+                    </a>
+                </h6>
+                <br/>
+                <input style = "padding: 5px; border-radius: 5px;" type="text" name="footer-email" id="footer-email" placeholder="Email">
+                <input class="mb-3" type="text" name="footer-message" placeholder = "Message" id="footer-message"><button type="button" class=" btn btn-secondary">Send</button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 ps-md-5">
+            <div class="border-bottom border-2 border-white mb-3">
+                <h5>
+                    <p class="text-white">
+                         Location &nbsp;<i class="fas fa-map-marker-alt"></i>
+                    </p>
+                </h5>
+            </div>
+            <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965842.5871276709!2d73.2264608053324!3d18.983440214737012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcd438679423c3%3A0x8e0206b8557dbbde!2sAshirwad%20Collection!5e0!3m2!1sen!2sin!4v1658398264414!5m2!1sen!2sin"
+          width="200" height="200" style="border:0;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </div>
+    <div class="last-box">
+        Developed By | Webish - all © Rights reserved 2022
+    </div>
+</footer>
+                    <style>
+                    #footer-message {
+                        padding: 4.5px;
+                        margin-right: 5px;
+                        margin-top: 20px;
+                        border-radius: 5px;
+                    }
+                    .last-box {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px 0;
+                    }
+                    </style>
+
+<!-- End footer -->
+
+    <script src="vender/js/bootstrap.bundle.js"></script>
+    <!-- <script src="vender/js/navbar.js"></script> -->
+
+    <script type="text/javascript">
+    //10sec timer
+    function dwntime() {
+        var timeleft = 5;
+        var downloadTimer = setInterval(function() {
+            if (timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("demo").innerHTML = "Congratulations";
+                document.getElementById("myNav").style.left = "100%";
+                document.getElementById("myNav1").style.left = "-100%";
+            } else {
+                document.getElementById("demo").innerHTML = timeleft;
+
+            }
+            timeleft -= 1;
+        }, 1000);
+    }
+
+    function changeClass() {
+        document.getElementById('outsidebg').className = "popup_outside_white";
+        document.getElementById('faded').className = "unfaded";
+    }
+    </script>
+    <script src="vender\js\popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+.footer{
+    margin-top: 150px !important;
+    background-color: #bd2633;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    border-bottom:solid 2px #ffab1f;
+    border-top:solid 2px #ffab1f;
+}
+.footer a{
+    text-decoration: none !important;
+    color: #fff;
+}
+.footer .card-section{
+    padding-top: 15px;
+    color: rgb(245, 245, 245);
+    border-bottom: solid 2px #fff;
+}
+.footer .card-section .item{
+    padding:0px 40px;
+    margin-bottom: 20px;
+}
+.footer .card-section h5{
+    text-align: center;
+    padding: 10px;
+    border-bottom: dashed 1px #fff;
+}
+.footer .card-section .importent-link a{
+    display: block;
+    padding-left: 10px;
+}
+.footer .card-section .quick-link a{
+    display: block;
+    padding-left: 10px;
+}
+.footer .footer-bottom{
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    background: black !important;
+}
+/* End footer */
