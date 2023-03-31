@@ -1,5 +1,5 @@
 # ashirwad.com
-
+link: https://pranav-lad.github.io/ashirwad.com/
 footer form spreadsheet link : https://docs.google.com/spreadsheets/d/18H1BJhRWhQL-7jI1z4sU56r6IP6pR8T0zGWlIi80IvY/edit?usp=sharing
 
 
